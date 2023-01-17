@@ -1,6 +1,4 @@
-                    HW 3 REPORT     
-
-Implementation
+ Implementation
 I got inspiration from the MessAdmin implementation and thus 
 used a same top level approach for my Pigzj implementation. 
 
