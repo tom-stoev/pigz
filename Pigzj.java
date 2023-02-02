@@ -21,8 +21,7 @@ public class Pigzj {
                 System.err.print("incorrect input"); 
                 System.exit(1);
             }
-
-            // hard coded because my try catches don't work :( 
+ 
             if(num_processes > 10000){
                 System.err.print("out of memory");
                 System.exit(1);
