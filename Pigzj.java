@@ -22,10 +22,10 @@ public class Pigzj {
                 System.exit(1);
             }
  
-            if(num_processes > 10000){
-                System.err.print("out of memory");
-                System.exit(1);
-            }
+//             if(num_processes > 10000){
+//                 System.err.print("out of memory");
+//                 System.exit(1);
+//             }
             
             try {
                 // class models same top level implementation as MessAdmin
