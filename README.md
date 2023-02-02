@@ -1,6 +1,6 @@
 # pigzj
 
-Pigzj introduces multithreading to the standard gzip compression algorithm. 
+Pigzj behaves like the C implementation pigz. 
 
 The number of threads passed in spawns a compressor thread pool so that multiple blocks can be compressed in parallel.
 
