@@ -8,7 +8,6 @@ The write thread waits for blocks to arrive in its queue (which occurs after the
 
 The checksum thread similarly has its own queue, but it does not need to wait for compression to finish. When a block is entered into its queue by the main read thread it is able to immediately begin updating the total checksum. 
 
-The write thread
 Compile with 
 ```
 javac *.java 
