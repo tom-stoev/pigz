@@ -2,6 +2,8 @@
 
 Pigzj introduces multithreading to the standard gzip compression algorithm. 
 
+The number of threads passed in spawns a compressor thread pool so that multiple blocks can be compressed in parallel.
+
 The main thread acts as a read thread and it continuously reads in new blocks as long as STDIN has more data to give. It submits a block that has been read to the compressor, which has a thread pool, and the write and checksum threads.
 
 The write thread waits for blocks to arrive in its queue (which occurs after they are read). The write thread pops off the last block in its queue, if the queue has blocks, and waits for that block's corresponding countdown latch to decrement to zero. This occurs when the block has finished compressing. After which it writes the contents of the compressed block to the output stream. 
